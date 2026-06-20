@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="color-scheme" content="light only">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zeltbahnの畳み方｜2./J.R19 資料館</title>
+<meta name="description" content="ドイツ軍の三角テントシート Zeltbahn 31 の畳み方を、写真付きで手順ごとに解説します。2./J.R19 資料館。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Special+Elite&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light only;
+  --paper:#BDBAAF;--paper-lt:#C8C5BA;--paper-doc:#C3C0B4;
+  --ink:#2B2A30;--type:#26262B;--type-soft:#3A3A40;
+  --red:#A6362B;--pencil:#2C4FA3;--rule:#8B887C;--dark:#2B2E29;
+  --tw:'Special Elite','IBM Plex Mono',monospace;--mono:'IBM Plex Mono',monospace;
+  --serif:'Shippori Mincho',serif;--sans:'Zen Kaku Gothic New',sans-serif;
+  --noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.18'/%3E%3C/svg%3E");
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--noise),linear-gradient(180deg,#A9A69B,#9E9B90);color:var(--ink);font-family:var(--serif);line-height:1.95;font-size:15.5px}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+header{position:sticky;top:0;z-index:50;background:var(--noise),linear-gradient(180deg,#31342E,var(--dark));color:#CFCCC0;border-bottom:3px solid #1E201C;box-shadow:0 2px 12px rgba(30,32,28,.4)}
+.nav{display:flex;align-items:center;justify-content:space-between;max-width:1060px;margin:0 auto;padding:13px 22px}
+.nav .brand{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-weight:800;font-size:1.12rem;letter-spacing:.06em;text-decoration:none}
+.brand-logo{width:30px;height:30px;border-radius:50%;background:#CFCCC0;padding:2px;object-fit:contain;flex:none}
+.nav .brand small{display:block;font-family:var(--tw);font-weight:400;font-size:.56rem;letter-spacing:.24em;opacity:.6;margin-top:1px}
+.nav ul{display:flex;gap:24px;list-style:none}
+.nav ul a{text-decoration:none;font-family:var(--sans);font-size:.8rem;letter-spacing:.12em;opacity:.88}
+.nav ul a:hover{opacity:1;text-decoration:underline;text-underline-offset:5px}
+.nav .menu-toggle{display:none;background:none;border:1px solid var(--rule);color:#CFCCC0;font-family:var(--tw);font-size:.72rem;padding:6px 12px;letter-spacing:.15em;cursor:pointer}
+@media(max-width:760px){
+  .nav ul{display:none;position:absolute;top:100%;left:0;right:0;background:var(--dark);flex-direction:column;gap:0;padding:8px 22px 18px;border-bottom:3px solid #1E201C}
+  .nav ul.open{display:flex}
+  .nav ul li{padding:9px 0;border-bottom:1px solid rgba(139,136,124,.3)}
+  .nav .menu-toggle{display:block}
+}
+
+.doc{max-width:820px;margin:46px auto 70px;position:relative;
+  background:var(--noise),radial-gradient(ellipse 120% 50% at 50% 0%,rgba(255,253,245,.5),transparent 60%),var(--paper-doc);
+  box-shadow:0 22px 55px rgba(30,32,28,.45);border:1px solid rgba(51,50,58,.35)}
+.doc::before{content:"";position:absolute;left:26px;top:0;bottom:0;width:18px;z-index:1;pointer-events:none;
+  background-image:radial-gradient(circle at 9px 9px,#8F8C81 7px,rgba(51,50,58,.4) 7.5px,transparent 9px);
+  background-size:18px 760px;background-position:0 200px;background-repeat:repeat-y}
+@media(max-width:760px){.doc::before{display:none}}
+.inner{padding:0 64px 50px 92px}
+@media(max-width:760px){.inner{padding:0 24px 40px}}
+
+.crumb{font-family:var(--tw);font-size:.7rem;letter-spacing:.12em;color:var(--type-soft);padding:28px 0 0;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.crumb a{text-decoration:none;border-bottom:1px solid var(--type-soft)}
+.crumb a:hover{color:var(--red);border-color:var(--red)}
+.crumb .sep{opacity:.5}
+
+.art-head{margin-top:26px;background:var(--noise),linear-gradient(180deg,#33392F,#2B2E29);color:#EDEAE0;padding:26px 28px;border:1px solid #1E201C;box-shadow:4px 5px 0 rgba(30,32,28,.3)}
+.art-head .kategorie{display:inline-block;font-family:var(--tw);font-size:.62rem;letter-spacing:.22em;color:#E08B7E;border:1px solid #E08B7E;padding:3px 12px}
+.art-head h1{font-family:var(--serif);font-weight:800;font-size:clamp(1.7rem,5vw,2.6rem);letter-spacing:.05em;line-height:1.35;margin:18px 0 10px;color:#FFFFFF}
+.art-head .de-name{font-family:var(--tw);font-size:.76rem;letter-spacing:.1em;color:#B8B3A4;margin-bottom:14px}
+.art-head .lede{font-family:var(--sans);font-size:.95rem;color:#EDEAE0;font-weight:400;max-width:640px}
+.art-head .meta{font-family:var(--tw);font-size:.64rem;letter-spacing:.1em;color:#B8B3A4;margin-top:18px;display:flex;gap:18px;flex-wrap:wrap}
+
+.body{margin-top:38px;font-family:var(--sans);font-size:1rem;line-height:2}
+.body>p{margin-bottom:1.3em}
+.body .de-term{font-family:var(--serif);font-weight:600}
+
+.note-box{border-left:4px solid var(--pencil);background:rgba(44,79,163,.05);padding:16px 20px;margin:26px 0;font-family:var(--sans);font-size:.9rem}
+.note-box .lbl{font-family:var(--tw);font-size:.6rem;letter-spacing:.2em;color:var(--pencil);display:block;margin-bottom:6px}
+
+/* 手順ステップ */
+.steps{margin-top:34px;counter-reset:step}
+.step{display:grid;grid-template-columns:1fr;gap:0;margin-bottom:34px;border:1px solid var(--type);background:rgba(38,38,43,.03);box-shadow:3px 4px 0 rgba(51,50,58,.14)}
+.step .cap{display:flex;align-items:flex-start;gap:14px;padding:16px 22px 14px;border-bottom:1px solid var(--rule)}
+.step .num{font-family:var(--tw);font-size:1.05rem;color:#CFCCC0;background:var(--type);width:34px;height:34px;display:flex;align-items:center;justify-content:center;flex:none;border-radius:2px}
+.step .txt{font-family:var(--serif);font-weight:600;font-size:1.08rem;letter-spacing:.03em;padding-top:3px}
+.step .plate{padding:12px;background:#D9D6CB}
+.step .plate img{width:100%;border:1px solid rgba(51,50,58,.25);filter:grayscale(.12) sepia(.05) contrast(1.03)}
+.step.dual .plate{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:560px){.step.dual .plate{grid-template-columns:1fr}}
+
+.final{text-align:center;font-family:var(--serif);font-weight:800;font-size:1.3rem;color:var(--red);letter-spacing:.1em;margin:8px 0 0;transform:rotate(-2deg);
+  border:2px solid var(--red);display:inline-block;padding:6px 22px;mix-blend-mode:multiply}
+.final-wrap{text-align:center;margin-top:30px}
+
+.source{margin-top:48px;border-top:1px solid var(--rule);padding-top:20px;font-family:var(--sans);font-size:.8rem;color:var(--type-soft)}
+.source .lbl{font-family:var(--tw);font-size:.62rem;letter-spacing:.2em;color:var(--red);display:block;margin-bottom:8px}
+
+.back-archive{display:inline-block;margin-top:44px;font-family:var(--sans);font-weight:700;font-size:.86rem;letter-spacing:.08em;text-decoration:none;
+  border:1.5px solid var(--ink);background:var(--paper-lt);padding:12px 28px;box-shadow:3px 3px 0 rgba(51,50,58,.3);transition:all .15s}
+.back-archive:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 rgba(51,50,58,.35)}
+
+footer{background:var(--noise),linear-gradient(180deg,#31342E,#23251F);color:#CFCCC0;padding:40px 0 34px;border-top:3px solid #1E201C}
+.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px;max-width:1000px;margin:0 auto;padding:0 24px}
+.foot .links{display:flex;gap:22px}
+.foot a{font-size:.8rem;letter-spacing:.1em;font-family:var(--sans)}
+.foot .c{font-family:var(--tw);font-size:.6rem;letter-spacing:.16em;opacity:.6}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav" aria-label="メイン">
+    <a class="brand" href="index.html"><img src="images/logo.jpg" alt="" class="brand-logo"><span>2./J.R19<small>INFANTERIE-REGIMENT 19</small></span></a>
+    <button class="menu-toggle" aria-expanded="false" onclick="const u=this.nextElementSibling;u.classList.toggle('open');this.setAttribute('aria-expanded',u.classList.contains('open'))">MENU</button>
+    <ul>
+      <li><a href="index.html#about">活動について</a></li>
+      <li><a href="index.html#begin">はじめての方へ</a></li>
+      <li><a href="index.html#archive">資料館</a></li>
+      <li><a href="index.html#gallery">活動記録</a></li>
+      <li><a href="index.html#contact">参加・連絡</a></li>
+    </ul>
+  </nav>
+</header>
+
+<article class="doc">
+  <div class="inner">
+    <nav class="crumb" aria-label="現在地">
+      <a href="index.html">トップ</a><span class="sep">/</span>
+      <a href="index.html#archive">資料館</a><span class="sep">/</span>
+      <span>Zeltbahnの畳み方</span>
+    </nav>
+
+    <header class="art-head">
+      <span class="kategorie">AUSRÜSTUNG — 装備</span>
+      <h1>Zeltbahnの畳み方</h1>
+      <div class="de-name">Zeltbahn 31</div>
+      <p class="lede">ドイツ軍歩兵が携行した三角テントシート Zeltbahn 31 の畳み方を、写真とともに手順ごとに解説します。</p>
+      <div class="meta">
+        <span>VERFASST — 2./J.R19</span>
+        <span>AUSRÜSTUNG — Zeltbahn 31</span>
+      </div>
+    </header>
+
+    <div class="body">
+      <p>Zeltbahn 31 は、雨具・テント・担架など多目的に使われた三角形の防水布です。携行の際は手順よく畳むことで装具に整然と収まり、迅速な展開もしやすくなります。以下、当団体で行っている畳み方の手順を順を追って示します。</p>
+
+      <div class="note-box">
+        <span class="lbl">補足 — ZELTBAHN とは</span>
+        Zeltbahn（ツェルトバーン）は「テント幕」の意。複数枚を組み合わせることで、人数に応じた野営用テントを構成できる構造になっています。
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="cap"><span class="num">1</span><span class="txt">全体を広げる。</span></div>
+          <div class="plate"><img src="images/zeltbahn/01.jpg" alt="手順1：Zeltbahnを広げた状態" loading="lazy"></div>
+        </div>
+
+        <div class="step">
+          <div class="cap"><span class="num">2</span><span class="txt">真ん中のボタンを閉めておく。</span></div>
+          <div class="plate"><img src="images/zeltbahn/02.jpg" alt="手順2：中央のボタンを閉める" loading="lazy"></div>
+        </div>
+
+        <div class="step dual">
+          <div class="cap"><span class="num">3</span><span class="txt">上を折り返した後、左右を折り四角にする。</span></div>
+          <div class="plate">
+            <img src="images/zeltbahn/03.jpg" alt="手順3：上を折り返す" loading="lazy">
+            <img src="images/zeltbahn/04.jpg" alt="手順3：左右を折り四角にする" loading="lazy">
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="cap"><span class="num">4</span><span class="txt">さらに半分に折る。</span></div>
+          <div class="plate"><img src="images/zeltbahn/05.jpg" alt="手順4：半分に折る" loading="lazy"></div>
+        </div>
+
+        <div class="step dual">
+          <div class="cap"><span class="num">5</span><span class="txt">これをさらに半分に折り、畳む。</span></div>
+          <div class="plate">
+            <img src="images/zeltbahn/06.jpg" alt="手順5：さらに半分に折る" loading="lazy">
+            <img src="images/zeltbahn/07.jpg" alt="手順5：畳む" loading="lazy">
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="cap"><span class="num">6</span><span class="txt">完成。</span></div>
+          <div class="plate"><img src="images/zeltbahn/08.jpg" alt="手順6：畳み終えた完成状態" loading="lazy"></div>
+        </div>
+      </div>
+
+      <div class="final-wrap"><span class="final">FERTIG ・ 完成</span></div>
+
+      <div class="source">
+        <span class="lbl">QUELLE — 出典</span>
+        本稿は当団体の活動において撮影・作成した解説資料です。
+      </div>
+    </div>
+
+    <a class="back-archive" href="index.html#archive">← 資料館の一覧に戻る</a>
+  </div>
+</article>
+
+<footer>
+  <div class="foot">
+    <div class="links">
+      <a href="index.html#about">活動について</a>
+      <a href="index.html#archive">資料館</a>
+      <a href="index.html#contact">お問い合わせ</a>
+    </div>
+    <div class="c">© 2./J.R19 — REENACTMENT GROUP, JAPAN</div>
+  </div>
+</footer>
+
+</body>
+</html>
